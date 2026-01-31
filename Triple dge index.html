@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Edge Construction Company Limited | Freetown, Sierra Leone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap');
+        
+        :root {
+            --primary: #0a2342;
+            --accent: #d4af37;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .nav-logo {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(10, 35, 66, 0.9), rgba(10, 35, 66, 0.8)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card:hover {
+            border-bottom: 4px solid #d4af37;
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #fbbf24, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#0a2342] text-white shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-yellow-500 p-2 rounded-sm">
+                        <i class="fas fa-drafting-compass text-[#0a2342] text-xl"></i>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight leading-none uppercase">
+                        Triple Edge<br><span class="text-yellow-500 text-xs tracking-widest">Construction Ltd.</span>
+                    </span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center font-medium text-xs uppercase tracking-widest">
+                    <a href="#home" class="hover:text-yellow-500 transition">Home</a>
+                    <a href="#mission" class="hover:text-yellow-500 transition">Mission</a>
+                    <a href="#services" class="hover:text-yellow-500 transition">Expertise</a>
+                    <a href="#contact" class="bg-yellow-500 text-[#0a2342] px-5 py-2 rounded-sm font-bold hover:bg-white transition">Get Started</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-2xl text-yellow-500">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden flex-col bg-[#0a2342] w-full p-6 space-y-4 border-t border-slate-700 md:hidden">
+            <a href="#home">Home</a>
+            <a href="#mission">Mission</a>
+            <a href="#services">Expertise</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero-bg h-screen flex items-center px-4">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl">
+                <span class="text-yellow-500 font-bold tracking-[0.3em] uppercase mb-4 block">Building Freetown's Future</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Innovative <span class="gradient-text">Engineering</span> Solutions.
+                </h1>
+                <p class="text-xl text-gray-200 mb-8 border-l-4 border-yellow-500 pl-4 leading-relaxed">
+                    Transforming Sierra Leone's landscape through sustainable practices, local expertise, and groundbreaking infrastructure development.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services" class="bg-yellow-500 text-[#0a2342] px-8 py-4 font-bold rounded-sm hover:bg-white transition-all shadow-lg">Our Core Services</a>
+                    <a href="#contact" class="bg-transparent text-white border-2 border-white/50 px-8 py-4 font-bold rounded-sm hover:bg-white hover:text-[#0a2342] transition-all">Request Consultation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mission & Vision Section (From Business Plan) -->
+    <section id="mission" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-yellow-500/10 rounded-full blur-3xl"></div>
+                    <h2 class="text-4xl font-black text-[#0a2342] mb-8 leading-tight">Setting the Benchmark for <span class="text-yellow-600">Quality & Innovation</span></h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="flex items-center text-xl font-bold text-[#0a2342] mb-3">
+                                <span class="w-8 h-1 bg-yellow-500 mr-3"></span> Our Mission
+                            </h4>
+                            <p class="text-gray-600 italic">"To deliver innovative, high-quality, and sustainable construction solutions that are both affordable and transformative, fostering economic growth and setting new standards of excellence in Sierra Leone."</p>
+                        </div>
+                        <div>
+                            <h4 class="flex items-center text-xl font-bold text-[#0a2342] mb-3">
+                                <span class="w-8 h-1 bg-yellow-500 mr-3"></span> Our Vision
+                            </h4>
+                            <p class="text-gray-600 italic">"To redefine the construction landscape in Sierra Leone by becoming the nation’s most trusted and innovative construction company."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="p-8 bg-slate-50 border-t-4 border-[#0a2342] shadow-sm">
+                        <i class="fas fa-leaf text-yellow-600 text-3xl mb-4"></i>
+                        <h5 class="font-bold mb-2">Sustainable</h5>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Materials & Practices</p>
+                    </div>
+                    <div class="p-8 bg-slate-50 border-t-4 border-[#0a2342] shadow-sm">
+                        <i class="fas fa-users text-yellow-600 text-3xl mb-4"></i>
+                        <h5 class="font-bold mb-2">Community</h5>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Locally Driven</p>
+                    </div>
+                    <div class="p-8 bg-slate-50 border-t-4 border-[#0a2342] shadow-sm">
+                        <i class="fas fa-microchip text-yellow-600 text-3xl mb-4"></i>
+                        <h5 class="font-bold mb-2">Cutting-Edge</h5>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Technology Use</p>
+                    </div>
+                    <div class="p-8 bg-slate-50 border-t-4 border-[#0a2342] shadow-sm">
+                        <i class="fas fa-shield-alt text-yellow-600 text-3xl mb-4"></i>
+                        <h5 class="font-bold mb-2">Reliable</h5>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Proven Safety</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Services (Expanded from Plan) -->
+    <section id="services" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-black text-[#0a2342] uppercase tracking-tighter mb-4">Our Core Expertise</h2>
+                    <p class="text-gray-600">Specializing in full-service construction management and civil engineering works across the Western Area and beyond.</p>
+                </div>
+                <div class="h-1 bg-yellow-500 w-32 mb-4 hidden md:block"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-200 service-card">
+                    <h3 class="text-xl font-bold text-[#0a2342] mb-4">Residential & Commercial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Building affordable luxury homes and modern retail spaces designed for longevity and style.</p>
+                    <ul class="text-xs space-y-2 text-slate-500 font-bold">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> LUXURY VILLAS</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> OFFICE COMPLEXES</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-200 service-card">
+                    <h3 class="text-xl font-bold text-[#0a2342] mb-4">Infrastructure Development</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Robust solutions for Sierra Leone's public utilities, enhancing connectivity and mobility.</p>
+                    <ul class="text-xs space-y-2 text-slate-500 font-bold">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> ROAD CONSTRUCTION</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> BRIDGE ENGINEERING</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-200 service-card">
+                    <h3 class="text-xl font-bold text-[#0a2342] mb-4">Consultancy & Valuation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Expert engineering consultancy, land surveys, and professional property valuation services.</p>
+                    <ul class="text-xs space-y-2 text-slate-500 font-bold">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> LAND SURVEYS</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> PROPERTY VALUATION</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-200 service-card">
+                    <h3 class="text-xl font-bold text-[#0a2342] mb-4">BOQ & Project Mgmt</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Precise Bill of Quantities and end-to-end management ensuring projects stay within budget.</p>
+                    <ul class="text-xs space-y-2 text-slate-500 font-bold">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> BUDGET PLANNING</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> SITE SUPERVISION</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-200 service-card">
+                    <h3 class="text-xl font-bold text-[#0a2342] mb-4">Renovation & Remodeling</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">Upgrading existing structures with modern aesthetics and structural reinforcements.</p>
+                    <ul class="text-xs space-y-2 text-slate-500 font-bold">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> HISTORIC RESTORATION</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i> INTERIOR UPGRADES</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-[#0a2342] p-10 shadow-sm text-white">
+                    <h3 class="text-xl font-bold mb-4">Civil Engineering Works</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6">Specialized civil engineering solutions tailored to the unique terrain of Freetown.</p>
+                    <a href="#contact" class="text-yellow-500 font-bold text-sm hover:underline italic underline-offset-4">Get a Quote for Civil Works &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Leadership -->
+    <section class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-slate-400 uppercase tracking-[0.4em] mb-12">Leadership</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-12 items-center">
+                <div class="max-w-xs">
+                    <div class="w-32 h-32 bg-slate-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-4xl text-slate-400"></i>
+                    </div>
+                    <h4 class="font-bold text-[#0a2342]">Andrew Abdul Hassan Fofanah</h4>
+                    <p class="text-yellow-600 font-bold text-sm uppercase">Director / Civil Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 bg-[#0a2342] rounded-lg shadow-2xl overflow-hidden">
+                <div class="p-12 text-white">
+                    <h2 class="text-3xl font-bold mb-8">Ready to Build?</h2>
+                    <p class="text-gray-300 mb-12">Contact our team at Kissy for a free consultation or a project estimate.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
+                            <div>
+                                <p class="font-bold">Head Office</p>
+                                <p class="text-sm text-gray-400">N147 New Lowcost Housing, Kissy, Freetown, Sierra Leone</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-phone-alt text-yellow-500 mt-1"></i>
+                            <div>
+                                <p class="font-bold">Phone</p>
+                                <p class="text-sm text-gray-400">+232 76 272 388</p>
+                                <p class="text-sm text-gray-400">+232 79 280 887</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-envelope text-yellow-500 mt-1"></i>
+                            <div>
+                                <p class="font-bold">Official Email</p>
+                                <p class="text-sm text-gray-400 underline italic">teclimited25@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-12 bg-white">
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" required class="w-full p-4 border-b-2 border-slate-100 outline-none focus:border-yellow-500 transition">
+                            <input type="text" placeholder="Last Name" required class="w-full p-4 border-b-2 border-slate-100 outline-none focus:border-yellow-500 transition">
+                        </div>
+                        <input type="email" placeholder="Email Address" required class="w-full p-4 border-b-2 border-slate-100 outline-none focus:border-yellow-500 transition">
+                        <select class="w-full p-4 border-b-2 border-slate-100 outline-none focus:border-yellow-500 transition text-gray-500">
+                            <option>Select Project Type</option>
+                            <option>Residential Construction</option>
+                            <option>Infrastructure/Roads</option>
+                            <option>Valuation/Consultancy</option>
+                            <option>Renovation</option>
+                        </select>
+                        <textarea placeholder="Tell us about your project vision..." rows="4" class="w-full p-4 border-b-2 border-slate-100 outline-none focus:border-yellow-500 transition"></textarea>
+                        <button class="w-full bg-[#0a2342] text-white py-5 font-bold uppercase tracking-widest hover:bg-yellow-500 hover:text-[#0a2342] transition-all">Submit Inquiry</button>
+                    </form>
+                    <div id="success" class="hidden mt-6 p-6 bg-green-50 text-green-800 rounded text-center">
+                        <i class="fas fa-check-circle mb-2 text-2xl"></i>
+                        <p class="font-bold">Inquiry Received!</p>
+                        <p class="text-sm">Triple Edge Construction will review your request and reach out shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-yellow-500 p-1.5 rounded-sm">
+                            <i class="fas fa-drafting-compass text-slate-900"></i>
+                        </div>
+                        <span class="text-xl font-bold uppercase">Triple Edge</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">Redefining the construction landscape in Sierra Leone through groundbreaking solutions and excellence.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-yellow-500 uppercase tracking-widest text-xs">Explore</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#mission" class="hover:text-white transition">Mission & Vision</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Our Expertise</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Hire Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 text-yellow-500 uppercase tracking-widest text-xs">Legal</h5>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>Company Reg: [CAC Number Pending]</li>
+                        <li>Directors: Andrew A. H. Fofanah</li>
+                        <li>Aruna Osaio Kamara</li>
+                        <li>Yayah Jallohh</li>
+                        <li>Momodu Ndomah</li>
+                        <li>Location: Lowcost Freetown, Sierra Leone </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest">
+                <p>&copy; 2024 Triple Edge Construction Company Limited.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Safety First</a>
+                    <a href="#" class="hover:text-white">Quality Always</a>
+                    <a href="#" class="hover:text-white">Community Driven</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Toggle
+        document.getElementById('menu-btn').onclick = function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        };
+
+        // Form Handling
+        document.getElementById('contactForm').onsubmit = function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('success').classList.remove('hidden');
+        };
+    </script>
+</body>
+</html>
